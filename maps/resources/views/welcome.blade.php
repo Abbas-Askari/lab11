@@ -19,15 +19,17 @@
 
     <div class="flex h-screen">
 
-        <div id="sidebar" class="flex flex-col">
+        <div id="sidebar" class="flex flex-col w-1/5">
             <div id="searchbar" class="m-4">
                 <input id="citySelect" class="w-full border-2 border-neutral-800 rounded text-lg py-2 px-4"
                     oninput="debuouncedFetching(this.value)">
             </div>
         </div>
-        <div class="w-3/4 relative">
+        <div class=" w-4/5 relative">
+            <div class="h-full w-full p-32 bg-gradient-to-r from-green-400 to to-blue-400">
+                <div id="map" class="h-full"></div>
 
-            <div id="map" class="h-full"></div>
+            </div>
             <div id="loading"
                 class="text-xl justify-center items-center absolute z-[1000]  inset-0 bg-[#00000080] text-white  cursor-wait flex hidden">
 
